@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive - Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom red color for buttons if needed */
+        .bg-custom-red {
+            background-color: #DB4444; /* The red from the image */
+        }
+        .bg-custom-red:hover {
+            background-color: #c93030; /* A slightly darker red for hover */
+        }
+        .text-custom-red {
+            color: #DB4444;
+        }
+        .border-custom-red {
+            border-color: #DB4444;
+        }
+        /* For the input fields with only bottom border */
+        .input-bottom-border {
+            border: none;
+            border-bottom: 1px solid #D1D5DB; /* gray-300 */
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .input-bottom-border:focus {
+            outline: none;
+            border-bottom-color: #000000; /* black */
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-gray-300 text-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col sm:flex-row justify-center sm:justify-between items-center">
+            <p class="text-center sm:text-left">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                <a href="#" class="font-semibold text-white underline hover:text-gray-200 ml-1">ShopNow</a>
+            </p>
+            <div class="relative mt-2 sm:mt-0">
+                <button class="flex items-center text-white hover:text-gray-200">
+                    English
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </button>
+                <!-- Dropdown (hidden by default) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-black">Exclusive</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-700 hover:text-black">Home</a>
+                <a href="#" class="text-gray-700 hover:text-black">Contact</a>
+                <a href="#" class="text-gray-700 hover:text-black">About</a>
+                <a href="#" class="text-black font-medium underline">Sign Up</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <div class="relative hidden md:block">
+                    <input type="text" placeholder="What are you looking for?" class="bg-gray-100 text-sm rounded-md py-2 px-4 pl-10 w-64 focus:outline-none focus:ring-1 focus:ring-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500 absolute left-3 top-1/2 transform -translate-y-1/2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-black relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <!-- Optional: Cart item count badge
+                    <span class="absolute -top-1 -right-1 bg-custom-red text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                    -->
+                </a>
+                <button class="md:hidden text-gray-700 hover:text-black"> <!-- Hamburger Menu for mobile -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div class="grid md:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <!-- Banner Image Section -->
+            <div class="md:col-span-7 lg:col-span-8">
+                <!-- Replace with your actual image -->
+                <img src="https://i.postimg.cc/Pq1M3P2c/online-shopping-on-phone-buy-sell-business-digital-web-vector-concept-cart-3d-illustration.jpg" alt="Shopping with phone, cart and bags" class="w-full h-auto object-contain rounded-md max-h-[550px]">
+            </div>
+
+            <!-- Form Section -->
+            <div class="md:col-span-5 lg:col-span-4">
+                <h2 class="text-3xl font-medium text-black mb-4">Create an account</h2>
+                <p class="text-gray-700 text-sm mb-6">Enter your details below</p>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Name"
+                               class="w-full py-2 input-bottom-border placeholder-gray-400 text-sm">
+                    </div>
+
+                    <div>
+                        <input type="text" name="email_phone" id="email_phone" placeholder="Email or Phone Number"
+                               class="w-full py-2 input-bottom-border placeholder-gray-400 text-sm">
+                    </div>
+
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Password"
+                               class="w-full py-2 input-bottom-border placeholder-gray-400 text-sm">
+                    </div>
+
+                    <div>
+                        <button type="submit"
+                                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-custom-red hover:bg-custom-red-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400 transition-colors">
+                            Create Account
+                        </button>
+                    </div>
+
+                    <div>
+                        <button type="button"
+                                class="w-full flex items-center justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm text-base font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.222,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571l0.001-0.001l6.19,5.238C39.705,34.636,44,29.891,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                            Sign up with Google
+                        </button>
+                    </div>
+                </form>
+
+                <p class="mt-8 text-center text-sm text-gray-700">
+                    Already have an account?
+                    <a href="#" class="font-medium text-gray-800 hover:text-black underline ml-1">
+                        Log in
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 pt-12 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+                <!-- Column 1: Exclusive -->
+                <div>
+                    <h5 class="text-xl font-bold text-white mb-4">Exclusive</h5>
+                    <p class="text-lg font-medium text-white mb-3">Subscribe</p>
+                    <p class="text-sm mb-3">Get 10% off your first order</p>
+                    <div class="relative">
+                        <input type="email" placeholder="Enter your email" class="bg-transparent border border-gray-400 text-white placeholder-gray-400 text-sm rounded-md py-2 px-3 w-full pr-10 focus:outline-none focus:border-white">
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Column 2: Support -->
+                <div>
+                    <h5 class="text-lg font-medium text-white mb-4">Support</h5>
+                    <address class="not-italic text-sm mb-2 leading-relaxed">
+                        111 Bijoy sarani, Dhaka,<br>
+                        DH 1515, Bangladesh.
+                    </address>
+                    <a href="mailto:exclusive@gmail.com" class="block text-sm hover:text-white mb-2">exclusive@gmail.com</a>
+                    <a href="tel:+88015-88888-9999" class="block text-sm hover:text-white">+88015-88888-9999</a>
+                </div>
+
+                <!-- Column 3: Account -->
+                <div>
+                    <h5 class="text-lg font-medium text-white mb-4">Account</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">My Account</a></li>
+                        <li><a href="#" class="hover:text-white">Login / Register</a></li>
+                        <li><a href="#" class="hover:text-white">Cart</a></li>
+                        <li><a href="#" class="hover:text-white">Wishlist</a></li>
+                        <li><a href="#" class="hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Quick Link -->
+                <div>
+                    <h5 class="text-lg font-medium text-white mb-4">Quick Link</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms Of Use</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Download App -->
+                <div>
+                    <h5 class="text-lg font-medium text-white mb-4">Download App</h5>
+                    <p class="text-xs text-gray-400 mb-2">Save $3 with App New User Only</p>
+                    <div class="flex space-x-2 mb-3">
+                        <div class="w-20 h-20 bg-gray-700 flex items-center justify-center">
+                            <!-- Replace with your QR code image -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=YourAppLinkHere" alt="QR Code" class="w-full h-full">
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <!-- Replace with your app store badge images -->
+                            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play" class="h-8 sm:h-9 object-contain"></a>
+                            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt="Download on the App Store" class="h-8 sm:h-9 object-contain"></a>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5"><path d="M22.08 12.01c0-5.52-4.49-10-10.02-10C6.52 2.01 2 6.49 2 12.01c0 4.99 3.66 9.13 8.44 9.89v-7H7.89v-2.89h2.55V9.81c0-2.52 1.5-3.92 3.8-3.92 1.11 0 2.24.2 2.24.2v2.46h-1.29c-1.25 0-1.66.77-1.66 1.59v1.88h2.78l-.45 2.89h-2.33v7c4.78-.76 8.44-4.9 8.44-9.89z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.9-.53 1.59-1.37 1.92-2.38-.82.48-1.75.83-2.73 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.22-1.95-.53v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.96 8.61 8.61 0 0 1-5.33 1.84c-.34 0-.68-.02-1.01-.06A12.17 12.17 0 0 0 8.5 20c7.24 0 11.2-6 11.2-11.22 0-.17 0-.34-.01-.51.77-.56 1.43-1.26 1.97-2.04z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5"><path d="M12 2.16c-2.14 0-2.41.01-3.25.05-1.74.08-2.65.36-3.22.93-.58.58-.85 1.48-.93 3.22-.04.84-.05 1.11-.05 3.25s.01 2.41.05 3.25c.08 1.74.36 2.65.93 3.22.58.58 1.48.85 3.22.93.84.04 1.11.05 3.25.05s2.41-.01 3.25-.05c1.74-.08 2.65-.36 3.22-.93.58-.58.85-1.48.93-3.22.04-.84.05-1.11.05-3.25s-.01-2.41-.05-3.25c-.08-1.74-.36-2.65-.93-3.22-.58-.58-1.48-.85-3.22-.93-.84-.04-1.11-.05-3.25-.05zm0-2.16C14.21 0 14.54 0 15.37 .04c1.89.08 3.25.38 4.4.95 1.17.57 2.02 1.42 2.59 2.59.57 1.15.87 2.5.95 4.4.04.83.04 1.16.04 3.29s0 2.46-.04 3.29c-.08 1.89-.38 3.25-.95 4.4-.57 1.17-1.42 2.02-2.59 2.59-1.15.57-2.5.87-4.4.95-.83.04-1.16.04-3.29.04s-2.46 0-3.29-.04c-1.89-.08-3.25-.38-4.4-.95-.94-.47-1.73-1.17-2.34-2S.42 17.39.33 15.37C.29 14.54.29 14.21.29 12s0-2.46.04-3.29c.08-1.89.38-3.25.95-4.4C1.85 3.15 2.7 2.3 3.87 1.73 5.02 1.16 6.38.86 8.27.78 9.1.74 9.43.74 12 .74zm0 5.83c-3.4 0-6.17 2.77-6.17 6.17s2.77 6.17 6.17 6.17 6.17-2.77 6.17-6.17S15.4 5.83 12 5.83zm0 10.33c-2.3 0-4.17-1.87-4.17-4.17s1.87-4.17 4.17-4.17 4.17 1.87 4.17 4.17-1.87 4.17-4.17 4.17zm6.16-11.7c-.53 0-.97.44-.97.97s.44.97.97.97.97-.44.97-.97-.43-.97-.97-.97z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5"><path d="M21.67 0H2.33C1.05 0 0 1.05 0 2.33v19.34C0 22.95 1.05 24 2.33 24h19.34c1.28 0 2.33-1.05 2.33-2.33V2.33C24 1.05 22.95 0 21.67 0zM7.06 20.44H3.53V8.97h3.53v11.47zm-1.77-12.5c-1.16 0-2.1-.94-2.1-2.1s.94-2.1 2.1-2.1 2.1.94 2.1 2.1-.95 2.1-2.1 2.1zm15.15 12.5h-3.53v-5.6c0-1.34-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.7h-3.53V8.97h3.39v1.55h.05c.47-.89 1.62-1.82 3.34-1.82 3.57 0 4.23 2.35 4.23 5.4v6.34z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-500 text-sm">© Copyright Rimel 2022. All right reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
